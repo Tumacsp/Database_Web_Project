@@ -8,12 +8,16 @@ include('includes/connect_database.php'); // ดึงไฟล์เชื่�
 // เช็คว่า กดปุ่ม update
 
 if (isset($_POST['editroom_update'])) {
+
+    $room_id = $_POST["room_id"];
     $roomtype = $_POST['room_type'];
     $roomdes = $_POST['room_description'];
     $roomprice = $_POST['room_price'];
     $roomsize = $_POST['room_size'];
     $room_facility = $_POST['room_facility'];
     $room_num = $_POST['room_num'];
+
+
 
 
     // เรียกใช้ hotel id
@@ -120,7 +124,7 @@ if (isset($_POST['editroom_update'])) {
 
         // ลบรูปก่อนที่จะเก็บไฟล์ใหม่
         $delete_stmt = $db->prepare('SELECT * FROM rooms WHERE room_id = :room_id');
-        $delete_stmt->bindParam(':room_id', $_SESSION["room_id"]);
+        $delete_stmt->bindParam(':room_id', $room_id);
         $delete_stmt->execute();
         $row = $delete_stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -145,7 +149,7 @@ if (isset($_POST['editroom_update'])) {
         $update_stmt->bindParam(':room_description', $roomdes);
         $update_stmt->bindParam(':rooms_img', $filename);
         $update_stmt->bindParam(':room_num', $room_num);
-        $update_stmt->bindParam(':room_id', $_SESSION["room_id"]);
+        $update_stmt->bindParam(':room_id', $room_id);
 
 
         $update_stmt->execute();
@@ -158,7 +162,7 @@ if (isset($_POST['editroom_update'])) {
          // ลบข้อมูลเก่า
          $sql6 = "DELETE FROM roomsfacility WHERE room_id = :room_id";
          $destmt6 = $db->prepare($sql6);
-         $destmt6->bindParam(':room_id',  $_SESSION["room_id"]);
+         $destmt6->bindParam(':room_id',  $room_id);
          $destmt6->execute();
 
 
@@ -171,7 +175,7 @@ if (isset($_POST['editroom_update'])) {
             $select_stmt6 = $db->prepare($sqlf);
 
             $select_stmt6->bindParam(':facility_id',  $facility_id);
-            $select_stmt6->bindParam(':room_id', $_SESSION["room_id"]);
+            $select_stmt6->bindParam(':room_id', $room_id);
             $select_stmt6->execute();
         }
 
