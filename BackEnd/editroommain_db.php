@@ -9,6 +9,7 @@ include('includes/connect_database.php'); // ดึงไฟล์เชื่�
 if (isset($_POST['editroom'])) {
 
     // ไปหน้า room Edit
+    $_SESSION["room_idse"] = $_POST["room_id"];
     header('location: ../editroom.php');
     
 }

@@ -2,6 +2,8 @@
 <?php
 
 session_start();
+include('BackEnd/includes/connect_database.php'); // ดึงไฟล์เชื่อม database เข้ามา
+
 
 if (!isset($_SESSION['is_login'])) {
     header('location: login.php'); // ถ้าไม่มีให้เด้งไป login
@@ -10,6 +12,24 @@ if (!isset($_SESSION['is_login'])) {
     header('location: registerhotel.php');
 
 }
+else{
+     // query ข้อมูลของคนที่ login เข้ามา เพื่อแสดงผลใน html
+     $select_stmt3 = $db ->prepare("SELECT * FROM rooms 
+     WHERE room_id = :room_id");
+ 
+     $select_stmt3->bindParam(':room_id', $_SESSION["room_idse"]);
+     $select_stmt3->execute();
+ 
+     $row = $select_stmt3->fetch(PDO::FETCH_ASSOC); // กรณีที่เราต้องการดึงข้อมูลมาแสดง
+     $_SESSION["rooms_price"] = $row['rooms_price'];
+     $_SESSION["rooms_type"] = $row['rooms_type'];
+     $_SESSION["rooms_size"] = $row['rooms_size'];
+     $_SESSION["rooms_description"] = $row['rooms_description'];
+     $_SESSION["rooms_number"] = $row['rooms_number'];
+}
+
+
+
 
 ?>
 
