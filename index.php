@@ -93,7 +93,7 @@ session_start();
                 <div class="card">
                     <img src="https://storage-wp.thaipost.net/2022/04/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%93%E0%B8%AF.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <a href="page1.html">กรุงเทพมหานคร</a>
+                        <a href="#">กรุงเทพมหานคร</a>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@ session_start();
                 <div class="card">
                     <img src="https://ik.imagekit.io/tvlk/blog/2018/07/Doi-Inthanon-ChiangMai-Traveloka-1.jpg?tr=dpr-2,w-675" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <a href="page1.html">เชี่ยงใหม่</a>
+                        <a href="#">เชี่ยงใหม่</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ session_start();
                 <div class="card">
                     <img src="https://wp-assets.dotproperty-kh.com/wp-content/uploads/sites/9/2016/11/03152051/pattaya.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <a href="page1.html">พัทยา</a>
+                        <a href="#">พัทยา</a>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@ session_start();
                 <div class="card">
                     <img src="https://travel.mthai.com/app/uploads/2019/03/ultOz2d0-e1552276693420.jpeg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
-                        <a href="page1.html">กาญจนบุรี</a>
+                        <a href="#">กาญจนบุรี</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@ session_start();
         <div class="row">
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/184305239.jpg?k=2d22fe63ae1f8960e057238c98fb436f7bd9f65854e3a5e918607c5cfa1d0a52&o=&hp=1" class="card-img-top" alt="รูปโรงแรม">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/184305239.jpg?k=2d22fe63ae1f8960e057238c98fb436f7bd9f65854e3a5e918607c5cfa1d0a52&o=&hp=1" width="300" height="200" class="card-img-top" alt="รูปโรงแรม">
                     <div class="card-body">
                         <h5 class="card-title">Gfeel Hostel</h5>
                         <p class="card-text">จังหวัด: กรุงเทพมหานคร</p>
@@ -150,7 +150,7 @@ session_start();
 
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://static.leonardo-hotels.com/image/leonardohotelbucharestcitycenter_room_comfortdouble2_2022_4000x2600_7e18f254bc75491965d36cc312e8111f_1200x780_mobile_3.jpeg" class="card-img-top" alt="รูปโรงแรม">
+                    <img src="https://static.leonardo-hotels.com/image/leonardohotelbucharestcitycenter_room_comfortdouble2_2022_4000x2600_7e18f254bc75491965d36cc312e8111f_1200x780_mobile_3.jpeg" width="300" height="200" class="card-img-top" alt="รูปโรงแรม">
                     <div class="card-body">
                         <h5 class="card-title">Grand Business Inn</h5>
                         <p class="card-text">จังหวัด: กรุงเทพมหานคร</p>
@@ -163,7 +163,7 @@ session_start();
 
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://www.kayak.co.th/rimg/himg/47/ec/7e/ice-115522-63352612_3XL-307131.jpg?width=1366&height=768&crop=true" class="card-img-top" alt="รูปโรงแรม">
+                    <img src="https://www.kayak.co.th/rimg/himg/47/ec/7e/ice-115522-63352612_3XL-307131.jpg?width=1366&height=768&crop=true" width="300" height="200" class="card-img-top" alt="รูปโรงแรม">
                     <div class="card-body">
                         <h5 class="card-title">ASAI Bangkok Sathorn</h5>
                         <p class="card-text">จังหวัด: กรุงเทพมหานคร</p>
@@ -176,7 +176,7 @@ session_start();
 
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://image-tc.galaxy.tf/wijpeg-68348kpk1umj01sjidmalztjd/jprerovsky-hotel-clement-807-16a2955.jpg" class="card-img-top" alt="รูปโรงแรม">
+                    <img src="https://image-tc.galaxy.tf/wijpeg-68348kpk1umj01sjidmalztjd/jprerovsky-hotel-clement-807-16a2955.jpg" width="300" height="200" class="card-img-top" alt="รูปโรงแรม">
                     <div class="card-body">
                         <h5 class="card-title">ASAI Bangkok Sathorn</h5>
                         <p class="card-text">จังหวัด: กรุงเทพมหานคร</p>
