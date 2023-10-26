@@ -35,7 +35,7 @@ if (isset($_POST['ad_submit'])) {
     $stmt3->execute();
 
 
-    header('location: admin.php?page=requirement');
+    header('location: admin.php?page=Requests');
 
     
 
@@ -74,7 +74,7 @@ if (isset($_POST['ad_submit'])) {
 
 
     $_SESSION['is_register'] = false;
-    header('location: admin.php?page=requirement');
+    header('location: admin.php?page=Requests');
 
 
 
